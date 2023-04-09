@@ -17,6 +17,7 @@ body {
   background-color: var(--white-color);
   font-family: "Roboto", sans-serif;
   color: var(--second-text-color);
+  /* width: 100%; */
 }
 h1,
 h2,
@@ -51,6 +52,7 @@ img {
 }
 
 .container {
+  /* max-width: 428px; */
   max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
