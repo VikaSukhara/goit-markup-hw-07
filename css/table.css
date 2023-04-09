@@ -4,13 +4,13 @@
   --second-text-color: #434455;
 }
 
-.conteiner {
+/* .conteiner {
   width: 768px;
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1156px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
 
@@ -72,8 +72,9 @@
     column-gap: 24px;
     /* padding-left: 108px;
     padding-right: 108px; */
-    justify-content: center;
+    width: 540px;
   }
+
 
   .wrap-input-foot {
     gap: 24px;

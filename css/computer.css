@@ -1,5 +1,9 @@
 /* Customer-section */
 @media screen and (min-width: 1158px) {
+
+  .container {
+    max-width: 1158px;
+  }
   .customers-list {
     gap: 24px;
   }
