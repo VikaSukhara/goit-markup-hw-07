@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +18,9 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/phone.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/computer.css" />
   </head>
   <body>
     <header class="headerr">
@@ -42,22 +46,101 @@
 
         <address class="adrs-list">
           <ul class="adrs-inf list">
-            <li class="item">
+            <li class="adr-item item">
               <a class="heder-adrs link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="adr-item item">
               <a class="heder-adrs link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-button" data-menu-open>
+          <svg class="menu-icon">
+            <use href="./images/customers-icon.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="container mob-container is-hidden" data-menu id="mobile-menu">
+        <div>
+          <button type="button" class="menu-close-button" data-menu-close>
+            <svg class="menu-close-icon">
+              <use href="./images/customers-icon.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav-conteiner">
+            <ul class="mob-list list">
+              <li class="mob-item item">
+                <a class="mob-link link current" href="./index.html">Studio</a>
+              </li>
+
+              <li class="mob-item item">
+                <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="mob-item item">
+                <a class="mob-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-adrs-list">
+            <ul class="mob-adrs-inf list">
+              <li class="item">
+                <a class="mob-adrs tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="item">
+                <a class="mob-adrs mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="menu-soc-list team-soc-list list">
+            <li class="team-soc-item item">
+              <a class="team-soc-link link" href="">
+                <svg width="16" height="16" class="team-soc-icons">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item item">
+              <a class="team-soc-link link" href="">
+                <svg width="16" height="16" class="team-soc-icons">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item item">
+              <a class="team-soc-link link" href="">
+                <svg width="16" height="16" class="team-soc-icons">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-item item">
+              <a class="team-soc-link link" href="">
+                <svg width="16" height="16" class="team-soc-icons">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main>
-      <!-- Hero -->
+      <!-- Hero-->
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
@@ -134,6 +217,10 @@
               <img
                 class="img-icon"
                 src="./images/proddesigner.jpg"
+                srcset="
+                  ./images/proddesigner.jpg    1x,
+                  ./images/proddesigner-2x.jpg 2x
+                "
                 alt="Product Designer"
                 width="264"
               />
@@ -176,6 +263,7 @@
               <img
                 class="img-icon"
                 src="./images/fontend.jpg"
+                srcset="./images/fontend.jpg 1x, ./images/fontend-2x.jpg 2x"
                 alt="Frontend Developer"
                 width="264"
               />
@@ -218,6 +306,7 @@
               <img
                 class="img-icon"
                 src="./images/market.jpg"
+                srcset="./images/market.jpg 1x, ./images/market-2x.jpg 2x"
                 alt="Marketing"
                 width="264"
               />
@@ -260,6 +349,10 @@
               <img
                 class="img-icon"
                 src="./images/uxdesigner.jpg"
+                srcset="
+                  ./images/uxdesigner.jpg    1x,
+                  ./images/uxdesigner-2x.jpg 2x
+                "
                 alt="UI Designer"
                 width="264"
               />
@@ -411,7 +504,6 @@
           <form>
             <p class="input-foot-text">Subscribe</p>
             <div class="wrap-input-foot">
-
               <input
                 class="input-footer"
                 type="email"
@@ -419,7 +511,8 @@
                 placeholder="E-mail"
               />
 
-              <button class="input-btn-footer" type="submit">Subscribe
+              <button class="input-btn-footer" type="submit">
+                Subscribe
                 <svg width="24" height="24">
                   <use href="./images/customers-icon.svg#icon-plane"></use>
                 </svg>
@@ -435,7 +528,7 @@
       <div class="modal">
         <button type="button" data-modal-close class="modal-button">
           <svg class="modal-icon">
-            <use href="./images/customers-icon.svg#icon-crosss"></use>
+            <use href="./images/customers-icon.svg#icon-cross"></use>
           </svg>
         </button>
 
@@ -500,10 +593,10 @@
             >
           </div>
           <button class="btn-inputs" type="submit">Send</button>
-
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

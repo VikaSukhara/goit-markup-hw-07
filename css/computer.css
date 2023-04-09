@@ -1,0 +1,39 @@
+/* Customer-section */
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    gap: 24px;
+  }
+  .about-section,
+  .customers-section,
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list .item {
+    margin-right: 24px;
+  }
+  .team-soc-list {
+    gap: 0;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    margin-right: 120px;
+  }
+
+  .foot-links {
+    margin-right: 80px;
+  }
+
+  .input-footer {
+    margin-right: 24px;
+  }
+  .mob-containe,
+  .menu-close-button,
+  .mob-nav-conteiner,
+  .mob-adrs-list,
+  .menu-soc-list,
+  .menu-open-button {
+    display: none;
+  }
+}
