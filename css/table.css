@@ -4,10 +4,16 @@
   --second-text-color: #434455;
 }
 
+.conteiner {
+  width: 768px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 768px;
   }
+
+
 
   .hero {
     max-width: 768px;
@@ -64,8 +70,9 @@
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    padding-left: 108px;
-    padding-right: 108px;
+    /* padding-left: 108px;
+    padding-right: 108px; */
+    justify-content: center;
   }
 
   .wrap-input-foot {
@@ -91,6 +98,7 @@
     flex-direction: column;
     gap: 6px;
   }
+
 
   .heder-adrs {
     padding-top: 0;

@@ -51,7 +51,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -149,9 +149,9 @@ img {
   margin-left: auto;
 }
 
-.adrs-inf .item:not(:last-child) {
+/* .adrs-inf .item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 .heder-adrs {
   display: block;
   padding-top: 24px;
@@ -178,6 +178,7 @@ img {
     ),
     url(../images/hero-bg.jpg);
   /* max-width: 1440px; */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
