@@ -42,6 +42,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 436px;
   }
 
 
@@ -57,6 +58,8 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-bg-tab-2x.jpg);
+        max-width: 768px;
+
     }
   }
 
